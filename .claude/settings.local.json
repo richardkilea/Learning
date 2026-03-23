@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/Administrator/Personal-Projects/FastAPI/Learning/**)",
+      "Bash(done)",
+      "Bash(find /c/Users/Administrator/Personal-Projects/FastAPI/Learning/FastAPI-* -maxdepth 2 -name \"*.py\" -type f ! -path \"*venv*\" ! -path \"*__pycache__*\")",
+      "Bash(grep -r \"htmx\\\\|HTMX\" /c/Users/Administrator/Personal-Projects/FastAPI/Learning/FastAPI-09-Frontend-Forms --include=*.html --include=*.py)",
+      "Bash(grep -r \"from jose\\\\|from jwt\\\\|from pyjwt\\\\|import jwt\" /c/Users/Administrator/Personal-Projects/FastAPI/Learning/FastAPI-10-Authentication-main --include=*.py)"
+    ]
+  }
+}

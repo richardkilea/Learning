@@ -1,2 +1,2 @@
 # Learning
-learning journey for full stack datascientist
+learning fast api

@@ -1,0 +1,48 @@
+[project]
+name = "fastapi-blog"
+version = "0.1.0"
+description = "Production-ready FastAPI starter"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "alembic>=1.16.5",
+    "email-validator>=2.2.0",
+    "fastapi[standard]>=0.128.0",
+    "greenlet>=3.3.0",
+    "pwdlib>=0.3.0",
+    "pydantic-settings>=2.10.1",
+    "python-dotenv>=1.1.1",
+    "python-jose[cryptography]>=3.5.0",
+    "python-multipart>=0.0.20",
+    "sqlalchemy>=2.0.45",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "mypy>=1.18.2",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
+    "ruff>=0.13.2",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
